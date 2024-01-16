@@ -6,7 +6,6 @@ export default function App() {
   return (
     <View style={styles.container}>
       <Modalapp />
-      <Text>Open up App.js to start working on your app!</Text>
       <StatusBar style="auto" />
     </View>
   );
@@ -19,7 +18,7 @@ const Modalapp = () => {
       <Modal 
         animationType="slide"
         transparent={true}
-        visible={modalVisible} // state
+        visible={modalVisible} 
         onRequestClose={() => {
           Alert.alert("Modal has been closed.");
           setModalVisible(!modalVisible);
